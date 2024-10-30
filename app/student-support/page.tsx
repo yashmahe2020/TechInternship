@@ -4,8 +4,16 @@ import Image from "next/image";
 import Link from "next/link";
 import Nav from '@/components/layout/nav';
 import Footer from '@/components/layout/footer';
+import { FC } from "react";
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { ArrowRight, BookOpen, Users, Search, Layers, GraduationCap } from 'lucide-react';
+
+interface SupportCardProps {
+  title: string;
+  url: string;
+  description: string;
+  icon: FC<{ className?: string }>;
+}
 
 const supportItems = [
   { title: 'Aeries', url: '/student-support/aeries', description: 'Access your grades and attendance information', icon: BookOpen },
@@ -15,7 +23,7 @@ const supportItems = [
   { title: 'Student Research Sources', url: '/student-support/student-research-sources', description: 'Find reliable sources for your research projects', icon: Search },
 ];
 
-const SupportCard = ({ title, url, description, icon: Icon }) => (
+const SupportCard: FC<SupportCardProps> = ({ title, url, description, icon: Icon }) => (
   <Link href={url} className="group">
     <Card className="transition-all duration-300 hover:shadow-md hover:bg-gray-50">
       <CardHeader>

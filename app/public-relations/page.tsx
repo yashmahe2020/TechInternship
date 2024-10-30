@@ -3,8 +3,17 @@ import Image from "next/image";
 import Link from "next/link";
 import Nav from '@/components/layout/nav';
 import Footer from '@/components/layout/footer';
+import { FC } from "react";
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { ArrowRight, Instagram, Layers, Users, Video, Newspaper } from 'lucide-react';
+
+// Define the types for each prop
+interface SupportCardProps {
+  title: string;
+  url: string;
+  description: string;
+  icon: FC<{ className?: string }>;
+}
 
 const prItems = [
   { title: 'Instagram', url: '/public-relations/instagram', description: 'Follow our official Instagram for updates and highlights', icon: Instagram },
@@ -14,7 +23,7 @@ const prItems = [
   { title: 'Newsletter', url: '/public-relations/newsletter', description: 'Subscribe to our regular newsletter for important updates', icon: Newspaper },
 ];
 
-const PRCard = ({ title, url, description, icon: Icon }) => (
+const PRCard: FC<SupportCardProps> = ({ title, url, description, icon: Icon }) => (
   <Link href={url} className="group">
     <Card className="transition-all duration-300 hover:shadow-md hover:bg-gray-50">
       <CardHeader>

@@ -4,8 +4,16 @@ import Image from "next/image";
 import Link from "next/link";
 import Nav from '@/components/layout/nav';
 import Footer from '@/components/layout/footer';
+import { FC } from "react";
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { ArrowRight, BookOpen, Layers, Users, MessageSquare, Bell, MessageCircle, Printer } from 'lucide-react';
+
+interface SupportCardProps {
+  title: string;
+  url: string;
+  description: string;
+  icon: FC<{ className?: string }>;
+}
 
 const supportItems = [
   { title: 'Aeries', url: '/faculty-support/aeries', description: 'Access and manage student grades and attendance', icon: BookOpen },
@@ -17,7 +25,7 @@ const supportItems = [
   { title: 'Copier Instructions', url: '/faculty-support/copier-instructions', description: 'Learn how to use the school copiers efficiently', icon: Printer },
 ];
 
-const SupportCard = ({ title, url, description, icon: Icon }) => (
+const SupportCard: FC<SupportCardProps> = ({ title, url, description, icon: Icon }) => (
   <Link href={url} className="group">
     <Card className="transition-all duration-300 hover:shadow-md hover:bg-gray-50">
       <CardHeader>

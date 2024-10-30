@@ -3,8 +3,17 @@ import Image from "next/image";
 import Link from "next/link";
 import Nav from '@/components/layout/nav';
 import Footer from '@/components/layout/footer';
+import { FC } from "react";
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { ArrowRight, Dumbbell, BookOpen, MessageSquare, Ticket } from 'lucide-react';
+
+// Define the types for each prop
+interface SupportCardProps {
+  title: string;
+  url: string;
+  description: string;
+  icon: FC<{ className?: string }>;
+}
 
 const parentSupportItems = [
   { 
@@ -33,7 +42,7 @@ const parentSupportItems = [
   },
 ];
 
-const ParentSupportCard = ({ title, url, description, icon: Icon }) => (
+const ParentSupportCard: FC<SupportCardProps> = ({ title, url, description, icon: Icon }) => (
   <Link href={url} className="group">
     <Card className="transition-all duration-300 hover:shadow-md hover:bg-gray-50">
       <CardHeader>
