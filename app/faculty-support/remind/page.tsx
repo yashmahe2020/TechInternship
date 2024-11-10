@@ -26,52 +26,52 @@ interface FAQItem {
 
 async function getData() {
   const videos: VideoItem[] = [
-    { title: "Aeries Overview", description: "Learn the basics of Aeries", videoId: "Xaqq6XtSCHs" },
-    { title: "Checking Active Grades", description: "How to view and understand your grades", videoId: "Xaqq6XtSCHs" },
-    { title: "Checking Transcript", description: "How to find and understand your transcript", videoId: "Xaqq6XtSCHs" },
+    { title: "Remind Overview for Teachers", description: "Introduction to Remind features for teachers and faculty", videoId: "Xaqq6XtSCHs" },
+    { title: "Setting Up Classes in Remind", description: "Learn how to create and manage classes in Remind", videoId: "Xaqq6XtSCHs" },
+    { title: "Sending Effective Messages", description: "Guide to crafting and sending impactful messages through Remind", videoId: "Xaqq6XtSCHs" },
   ];
 
   const slideshows: SlideshowItem[] = [
     {
-      title: "Navigating Aeries",
-      description: "Step-by-step guide to using Aeries",
+      title: "Navigating the Remind Platform",
+      description: "Step-by-step guide for teachers using Remind",
       embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
     },
     {
-      title: "Understanding Your Grades",
-      description: "How to interpret your grade report",
+      title: "Managing Student and Parent Contacts",
+      description: "How to organize and manage your contacts in Remind",
       embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
     },
     {
-      title: "Tracking Assignments",
-      description: "Managing your assignments in Aeries",
+      title: "Using Remind for Event Planning",
+      description: "Leveraging Remind features for school events and activities",
       embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
     }
   ];
 
   const faqs: FAQItem[] = [
     {
-      question: "What should I do if I forget my Aeries password?",
-      answer: "If you forget your password, click on the 'Forgot Password' link on the Aeries login page. Follow the prompts to reset your password. If you continue to have issues, contact your school's administration office for assistance."
+      question: "How do I create a new class in Remind?",
+      answer: "To create a new class, log into your Remind account and click 'Add a class' on your dashboard. Enter the class name and grade level, then choose how you want to add participants. You can share the class code or send invitations directly."
     },
     {
-      question: "Can my parents access my Aeries account?",
-      answer: "Yes, parents can have their own Aeries accounts to view their child's information. They need to contact the school to receive their account credentials. Parents' accounts are separate from student accounts and may have different levels of access."
+      question: "Can I schedule messages in advance?",
+      answer: "Yes, Remind allows you to schedule messages. When composing a message, click on the calendar icon next to the 'Send' button. Choose the date and time you want the message to be sent, then click 'Schedule'."
     },
     {
-      question: "How do I view my class schedule in Aeries?",
-      answer: "In Aeries, look for a tab or section labeled 'Schedule' or 'Classes'. This will display your current class schedule, including class periods, teacher names, and room numbers."
+      question: "How do I attach files to my Remind messages?",
+      answer: "When composing a message, click on the paperclip icon to attach a file. You can upload files from your device or connect to cloud services like Google Drive or Dropbox. Note that there are file size limits for attachments."
     },
     {
-      question: "Where can I find my attendance record in Aeries?",
-      answer: "To view your attendance record, look for an 'Attendance' tab in Aeries. This section will show your attendance for each class, including any absences or tardies."
+      question: "Can I create polls or surveys in Remind?",
+      answer: "Yes, Remind supports creating polls. When composing a message, click on the 'Poll' option. Enter your question and answer choices. You can set a deadline for responses and choose whether to allow multiple selections or not."
     },
   ];
 
   return { videos, slideshows, faqs };
 }
 
-export default async function StudentSupport() {
+export default async function TeacherFacultySupport() {
   const { videos, slideshows, faqs } = await getData();
 
   return (
@@ -81,8 +81,8 @@ export default async function StudentSupport() {
 
         <div className="z-10 w-full max-w-7xl px-5 xl:px-0 mt-16 my-8">
           <Hero 
-            title="Aeries Support" 
-            description="Tech support and resources for students using Aeries."
+            title="Remind Support" 
+            description="Resources and support for teachers and faculty using Remind."
           />
 
           <Suspense fallback={<div>Loading content...</div>}>

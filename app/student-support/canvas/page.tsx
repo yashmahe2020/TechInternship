@@ -26,52 +26,52 @@ interface FAQItem {
 
 async function getData() {
   const videos: VideoItem[] = [
-    { title: "Aeries Overview", description: "Learn the basics of Aeries", videoId: "Xaqq6XtSCHs" },
-    { title: "Checking Active Grades", description: "How to view and understand your grades", videoId: "Xaqq6XtSCHs" },
-    { title: "Checking Transcript", description: "How to find and understand your transcript", videoId: "Xaqq6XtSCHs" },
+    { title: "Canvas Overview", description: "Introduction to Canvas features", videoId: "Xaqq6XtSCHs" },
+    { title: "Navigating Your Courses", description: "How to find and access your courses in Canvas", videoId: "Xaqq6XtSCHs" },
+    { title: "Submitting Assignments", description: "Step-by-step guide to submitting assignments in Canvas", videoId: "Xaqq6XtSCHs" },
   ];
 
   const slideshows: SlideshowItem[] = [
     {
-      title: "Navigating Aeries",
-      description: "Step-by-step guide to using Aeries",
+      title: "Canvas Dashboard Tour",
+      description: "Explore the main features of your Canvas dashboard",
       embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
     },
     {
-      title: "Understanding Your Grades",
-      description: "How to interpret your grade report",
+      title: "Using the Canvas Calendar",
+      description: "How to effectively use the Calendar feature in Canvas",
       embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
     },
     {
-      title: "Tracking Assignments",
-      description: "Managing your assignments in Aeries",
+      title: "Participating in Discussions",
+      description: "Guide to engaging in Canvas discussion boards",
       embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
     }
   ];
 
   const faqs: FAQItem[] = [
     {
-      question: "What should I do if I forget my Aeries password?",
-      answer: "If you forget your password, click on the 'Forgot Password' link on the Aeries login page. Follow the prompts to reset your password. If you continue to have issues, contact your school's administration office for assistance."
+      question: "How do I reset my Canvas password?",
+      answer: "To reset your Canvas password, click on the 'Forgot Password' link on the login page. Enter your email address associated with your Canvas account, and follow the instructions sent to your email to create a new password."
     },
     {
-      question: "Can my parents access my Aeries account?",
-      answer: "Yes, parents can have their own Aeries accounts to view their child's information. They need to contact the school to receive their account credentials. Parents' accounts are separate from student accounts and may have different levels of access."
+      question: "Can I access Canvas on my mobile device?",
+      answer: "Yes, Canvas has mobile apps available for both iOS and Android devices. Search for 'Canvas Student' in your device's app store, download the app, and log in with your Canvas credentials."
     },
     {
-      question: "How do I view my class schedule in Aeries?",
-      answer: "In Aeries, look for a tab or section labeled 'Schedule' or 'Classes'. This will display your current class schedule, including class periods, teacher names, and room numbers."
+      question: "How do I view my grades in Canvas?",
+      answer: "To view your grades, click on the 'Grades' link in the left-hand navigation menu of your Canvas dashboard. Here, you'll see a list of your courses and your current grades. Click on a specific course to see detailed grade information for individual assignments."
     },
     {
-      question: "Where can I find my attendance record in Aeries?",
-      answer: "To view your attendance record, look for an 'Attendance' tab in Aeries. This section will show your attendance for each class, including any absences or tardies."
+      question: "What should I do if I can't see one of my courses in Canvas?",
+      answer: "If you can't see a course you're enrolled in, first check your Canvas dashboard and the 'Courses' menu to ensure it's not hidden. If you still can't find it, contact your instructor or the school's IT support. They can verify your enrollment and ensure the course is published and accessible to you."
     },
   ];
 
   return { videos, slideshows, faqs };
 }
 
-export default async function StudentSupport() {
+export default async function CanvasSupport() {
   const { videos, slideshows, faqs } = await getData();
 
   return (
@@ -81,8 +81,8 @@ export default async function StudentSupport() {
 
         <div className="z-10 w-full max-w-7xl px-5 xl:px-0 mt-16 my-8">
           <Hero 
-            title="Aeries Support" 
-            description="Tech support and resources for students using Aeries."
+            title="Canvas Support" 
+            description="Resources and support for students and teachers using Canvas."
           />
 
           <Suspense fallback={<div>Loading content...</div>}>

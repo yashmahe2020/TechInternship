@@ -26,52 +26,52 @@ interface FAQItem {
 
 async function getData() {
   const videos: VideoItem[] = [
-    { title: "Aeries Overview", description: "Learn the basics of Aeries", videoId: "Xaqq6XtSCHs" },
-    { title: "Checking Active Grades", description: "How to view and understand your grades", videoId: "Xaqq6XtSCHs" },
-    { title: "Checking Transcript", description: "How to find and understand your transcript", videoId: "Xaqq6XtSCHs" },
+    { title: "Minga Overview for Teachers", description: "Introduction to Minga features for teachers and faculty", videoId: "Xaqq6XtSCHs" },
+    { title: "Creating Digital Hall Passes", description: "Learn how to create and manage digital hall passes in Minga", videoId: "Xaqq6XtSCHs" },
+    { title: "Managing Student Check-ins", description: "Guide to tracking and managing student check-ins with Minga", videoId: "Xaqq6XtSCHs" },
   ];
 
   const slideshows: SlideshowItem[] = [
     {
-      title: "Navigating Aeries",
-      description: "Step-by-step guide to using Aeries",
+      title: "Navigating the Minga Dashboard",
+      description: "Step-by-step guide for teachers using Minga",
       embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
     },
     {
-      title: "Understanding Your Grades",
-      description: "How to interpret your grade report",
+      title: "Setting Up School Events",
+      description: "How to create and manage school events in Minga",
       embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
     },
     {
-      title: "Tracking Assignments",
-      description: "Managing your assignments in Aeries",
+      title: "Using Minga for Classroom Management",
+      description: "Leveraging Minga features for effective classroom management",
       embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
     }
   ];
 
   const faqs: FAQItem[] = [
     {
-      question: "What should I do if I forget my Aeries password?",
-      answer: "If you forget your password, click on the 'Forgot Password' link on the Aeries login page. Follow the prompts to reset your password. If you continue to have issues, contact your school's administration office for assistance."
+      question: "How do I create a digital hall pass in Minga?",
+      answer: "To create a digital hall pass, open the Minga app, tap on 'Hall Pass', then 'Create Pass'. Select the student, destination, and duration. The pass will be sent to the student's device and tracked in the system."
     },
     {
-      question: "Can my parents access my Aeries account?",
-      answer: "Yes, parents can have their own Aeries accounts to view their child's information. They need to contact the school to receive their account credentials. Parents' accounts are separate from student accounts and may have different levels of access."
+      question: "Can I schedule recurring events in Minga?",
+      answer: "Yes, when creating an event in Minga, you can set it as recurring. Choose the frequency (daily, weekly, monthly), set an end date if applicable, and the event will automatically appear on the scheduled days."
     },
     {
-      question: "How do I view my class schedule in Aeries?",
-      answer: "In Aeries, look for a tab or section labeled 'Schedule' or 'Classes'. This will display your current class schedule, including class periods, teacher names, and room numbers."
+      question: "How do I track student participation in school events?",
+      answer: "Minga allows you to take attendance at events. When the event is ongoing, open it in the app and use the 'Check-in' feature. You can manually check in students or let them self-check-in using a QR code."
     },
     {
-      question: "Where can I find my attendance record in Aeries?",
-      answer: "To view your attendance record, look for an 'Attendance' tab in Aeries. This section will show your attendance for each class, including any absences or tardies."
+      question: "Can I communicate with students through Minga?",
+      answer: "Yes, Minga offers communication features. You can send announcements to all students or specific groups. For individual communication, use the messaging feature, ensuring all interactions are logged for transparency."
     },
   ];
 
   return { videos, slideshows, faqs };
 }
 
-export default async function StudentSupport() {
+export default async function TeacherFacultySupport() {
   const { videos, slideshows, faqs } = await getData();
 
   return (
@@ -81,8 +81,8 @@ export default async function StudentSupport() {
 
         <div className="z-10 w-full max-w-7xl px-5 xl:px-0 mt-16 my-8">
           <Hero 
-            title="Aeries Support" 
-            description="Tech support and resources for students using Aeries."
+            title="Minga Support" 
+            description="Resources and support for teachers and faculty using Minga."
           />
 
           <Suspense fallback={<div>Loading content...</div>}>

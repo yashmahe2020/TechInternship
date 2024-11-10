@@ -22,7 +22,7 @@ const supportItems = [
   { title: 'Google Classroom', url: '/faculty-support/google-classroom', description: 'Create, distribute, and grade assignments', icon: MessageSquare },
   { title: 'Remind', url: '/faculty-support/remind', description: 'Send quick, important messages to students and parents', icon: Bell },
   { title: 'Slack', url: '/faculty-support/slack', description: 'Collaborate with other faculty members in real-time', icon: MessageCircle },
-  { title: 'Copier Instructions', url: '/faculty-support/copier-instructions', description: 'Learn how to use the school copiers efficiently', icon: Printer },
+  { title: 'Copier Instructions', url: '/faculty-support/copier', description: 'Learn how to use the school copiers efficiently', icon: Printer },
 ];
 
 const SupportCard: FC<SupportCardProps> = ({ title, url, description, icon: Icon }) => (

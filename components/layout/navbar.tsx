@@ -25,21 +25,20 @@ const DROPDOWN_ITEMS: DropdownHead[] = [
       { title: 'Aeries', url: '/student-support/aeries'},
       { title: 'Canvas', url: '/student-support/canvas'},
       { title: 'Minga', url: '/student-support/minga'},
-      { title: 'Club Stuff', url: '/student-support/clubs'},
-      { title: 'Student Research Sources', url: '/student-support/student-research-sources'},
+      { title: 'Clubs', url: '/student-support/clubs'},
     ],
   },
-  {
-    name: 'Public Relations',
-    url: '/public-relations',
-    items: [
-      { title: 'Instagram', url: '/public-relations/instagram'},
-      { title: 'Canvas', url: '/public-relations/canvas'},
-      { title: 'ASB Connection', url: '/public-relations/asb'},
-      { title: 'Promotional Videos', url: '/public-relations/promotional-videos'},
-      { title: 'Newsletter', url: '/public-relations/newsletter'},
-    ],
-  },
+  // {
+  //   name: 'Public Relations',
+  //   url: '/public-relations',
+  //   items: [
+  //     { title: 'Instagram', url: '/public-relations/instagram'},
+  //     { title: 'Canvas', url: '/public-relations/canvas'},
+  //     { title: 'ASB Connection', url: '/public-relations/asb'},
+  //     { title: 'Promotional Videos', url: '/public-relations/promotional-videos'},
+  //     { title: 'Newsletter', url: '/public-relations/newsletter'},
+  //   ],
+  // },
   {
     name: 'Faculty Support',
     url: '/faculty-support',
@@ -50,7 +49,7 @@ const DROPDOWN_ITEMS: DropdownHead[] = [
       { title: 'Google Classroom', url: '/faculty-support/google-classroom'},
       { title: 'Remind', url: '/faculty-support/remind'},
       { title: 'Slack', url: '/faculty-support/slack'},
-      { title: 'Copier Instructions', url: '/faculty-support/copier-instructions'},
+      { title: 'Copier Instructions', url: '/faculty-support/copier'},
     ],
   },
   {
@@ -65,16 +64,16 @@ const DROPDOWN_ITEMS: DropdownHead[] = [
   },
 ];
 
-const Dropdown = ({ items, isOpen }: { items: DropdownItem[], isOpen: boolean }) => {
+const Dropdown = ({ items, isOpen, headerWidth }: { items: DropdownItem[], isOpen: boolean, headerWidth: number }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="absolute top-full left-0 bg-white shadow-lg rounded-md py-2 z-50">
+    <div className="absolute top-full left-0 bg-white shadow-lg rounded-md py-2 z-50" style={{ minWidth: `${headerWidth}px` }}>
       {items.map((item, index) => (
         <Link
           key={index}
           href={item.url}
-          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 whitespace-nowrap"
         >
           {item.title}
         </Link>
@@ -87,6 +86,8 @@ export default function NavBar() {
   const scrolled = useScroll(50);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const [dropdownHeaderWidths, setDropdownHeaderWidths] = useState<{[key: string]: number}>({});
+  const dropdownRefs = useRef<{[key: string]: HTMLDivElement | null}>({});
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -99,6 +100,16 @@ export default function NavBar() {
   const handleMouseLeave = () => {
     setOpenDropdown(null);
   };
+
+  useEffect(() => {
+    const widths: {[key: string]: number} = {};
+    DROPDOWN_ITEMS.forEach(item => {
+      if (dropdownRefs.current[item.name]) {
+        widths[item.name] = dropdownRefs.current[item.name]!.offsetWidth;
+      }
+    });
+    setDropdownHeaderWidths(widths);
+  }, []);
 
   return (
     <div
@@ -164,10 +175,11 @@ export default function NavBar() {
                 className="relative"
                 onMouseEnter={() => handleMouseEnter(item.name)}
                 onMouseLeave={handleMouseLeave}
+                ref={el => dropdownRefs.current[item.name] = el}
               >
                 <Link
                   href={item.url}
-                  className="flex items-center justify-center text-sm leading-[110%] px-4 py-2 rounded-md hover:bg-[#F5F5F5] dark:hover:bg-neutral-800 hover:text-black text-muted dark:text-muted-dark"
+                  className="flex items-center justify-center text-sm leading-[110%] px-4 py-2 rounded-md hover:bg-[#F5F5F5] dark:hover:bg-neutral-800 hover:text-black text-muted dark:text-muted-dark whitespace-nowrap"
                 >
                   {item.name}
                   <ChevronDown className="ml-1 h-4 w-4" />
@@ -175,6 +187,7 @@ export default function NavBar() {
                 <Dropdown
                   items={item.items}
                   isOpen={openDropdown === item.name}
+                  headerWidth={dropdownHeaderWidths[item.name] || 0}
                 />
               </div>
             ))}

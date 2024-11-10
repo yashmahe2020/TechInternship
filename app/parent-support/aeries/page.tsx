@@ -26,52 +26,52 @@ interface FAQItem {
 
 async function getData() {
   const videos: VideoItem[] = [
-    { title: "Aeries Overview", description: "Learn the basics of Aeries", videoId: "Xaqq6XtSCHs" },
-    { title: "Checking Active Grades", description: "How to view and understand your grades", videoId: "Xaqq6XtSCHs" },
-    { title: "Checking Transcript", description: "How to find and understand your transcript", videoId: "Xaqq6XtSCHs" },
+    { title: "Aeries Overview for Parents", description: "Introduction to Aeries features for parents", videoId: "Xaqq6XtSCHs" },
+    { title: "Viewing Grades", description: "Learn how to view and understand your child's grades", videoId: "Xaqq6XtSCHs" },
+    { title: "Checking Attendance", description: "Guide to checking your child's attendance records", videoId: "Xaqq6XtSCHs" },
   ];
 
   const slideshows: SlideshowItem[] = [
     {
-      title: "Navigating Aeries",
-      description: "Step-by-step guide to using Aeries",
+      title: "Navigating the Parent Portal",
+      description: "Step-by-step guide for parents",
       embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
     },
     {
-      title: "Understanding Your Grades",
-      description: "How to interpret your grade report",
+      title: "Monitoring Your Child's Progress",
+      description: "How to keep track of grades and attendance",
       embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
     },
     {
-      title: "Tracking Assignments",
-      description: "Managing your assignments in Aeries",
+      title: "Parent-Teacher Communication Tips",
+      description: "Using Aeries to stay connected with teachers",
       embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
     }
   ];
 
   const faqs: FAQItem[] = [
     {
-      question: "What should I do if I forget my Aeries password?",
-      answer: "If you forget your password, click on the 'Forgot Password' link on the Aeries login page. Follow the prompts to reset your password. If you continue to have issues, contact your school's administration office for assistance."
+      question: "How do I reset my Aeries parent account password?",
+      answer: "To reset your password, go to the Aeries login page and click 'Forgot Password'. Follow the steps to receive a reset link. If you need further help, please contact your child's school office."
     },
     {
-      question: "Can my parents access my Aeries account?",
-      answer: "Yes, parents can have their own Aeries accounts to view their child's information. They need to contact the school to receive their account credentials. Parents' accounts are separate from student accounts and may have different levels of access."
+      question: "Can I see my child's assignments and grades on Aeries?",
+      answer: "Yes, you can view your child's grades, assignments, and more. Log in to your parent account, and look under the 'Grades' or 'Assignments' sections for detailed information."
     },
     {
-      question: "How do I view my class schedule in Aeries?",
-      answer: "In Aeries, look for a tab or section labeled 'Schedule' or 'Classes'. This will display your current class schedule, including class periods, teacher names, and room numbers."
+      question: "How do I track my child's attendance?",
+      answer: "In your parent portal, click on the 'Attendance' section to view your child's attendance history, including any absences or tardies."
     },
     {
-      question: "Where can I find my attendance record in Aeries?",
-      answer: "To view your attendance record, look for an 'Attendance' tab in Aeries. This section will show your attendance for each class, including any absences or tardies."
+      question: "Can I communicate with teachers through Aeries?",
+      answer: "Yes, Aeries offers a messaging feature to help parents communicate with teachers. Look for the 'Messages' or 'Communication' tab in the portal."
     },
   ];
 
   return { videos, slideshows, faqs };
 }
 
-export default async function StudentSupport() {
+export default async function ParentSupport() {
   const { videos, slideshows, faqs } = await getData();
 
   return (
@@ -82,7 +82,7 @@ export default async function StudentSupport() {
         <div className="z-10 w-full max-w-7xl px-5 xl:px-0 mt-16 my-8">
           <Hero 
             title="Aeries Support" 
-            description="Tech support and resources for students using Aeries."
+            description="Resources and support for parents using the Aeries Parent Portal."
           />
 
           <Suspense fallback={<div>Loading content...</div>}>
