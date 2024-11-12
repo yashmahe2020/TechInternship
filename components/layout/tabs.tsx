@@ -25,8 +25,8 @@ export function ContentTabs({ videos, slideshows }: ContentTabsProps) {
   return (
     <Tabs defaultValue="videos" className="w-full">
       <TabsList className="grid w-full grid-cols-2 mb-8">
-        <TabsTrigger value="videos">Videos</TabsTrigger>
-        <TabsTrigger value="slideshows">Slideshows</TabsTrigger>
+        <TabsTrigger value="videos" className="text-lg font-semibold py-3">Videos</TabsTrigger>
+        <TabsTrigger value="slideshows" className="text-lg font-semibold py-3">Slideshows</TabsTrigger>
       </TabsList>
       <TabsContent value="videos">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">

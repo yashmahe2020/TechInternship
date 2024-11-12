@@ -1,9 +1,6 @@
 import React from 'react';
 import Nav from '@/components/layout/nav';
 import Footer from '@/components/layout/footer';
-import AllFeatures from '@/components/layout/all-features';
-import Steps from '@/components/home/KeySteps';
-import WeekNavigator from "@/components/home/weekNavigator";
 import Mission from '@/components/home/mission';
 
 export default async function Home() {
