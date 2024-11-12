@@ -4,13 +4,13 @@ import { sfPro, inter } from "./fonts";
 import { Analytics as VercelAnalytics } from "@vercel/analytics/react";
 
 export const metadata = {
-  title: "MVHS Steam Week",
+  title: "MVHS Tech Support",
   description:
-    "MVHS Steam Week takes place from ",
+    "Tech Support for students, parents, and admin at Mountain View High School.",
   icons: {
-    icon: 'logo.png',
+    icon: 'spartan.png',
   },
-  metadataBase: new URL('https://steam-week.vercel.app/'),
+  metadataBase: new URL('https://mvhs-tech.vercel.app/'),
 };
 
 export default function RootLayout({
