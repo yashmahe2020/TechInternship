@@ -26,27 +26,17 @@ interface FAQItem {
 
 async function getData() {
   const videos: VideoItem[] = [
-    { title: "Aeries Overview", description: "Learn the basics of Aeries", videoId: "Xaqq6XtSCHs" },
-    { title: "Checking Active Grades", description: "How to view and understand your grades", videoId: "Xaqq6XtSCHs" },
-    { title: "Checking Transcript", description: "How to find and understand your transcript", videoId: "Xaqq6XtSCHs" },
+    // { title: "Aeries Overview", description: "Learn the basics of Aeries", videoId: "Xaqq6XtSCHs" },
+    // { title: "Checking Active Grades", description: "How to view and understand your grades", videoId: "Xaqq6XtSCHs" },
+    // { title: "Checking Transcript", description: "How to find and understand your transcript", videoId: "Xaqq6XtSCHs" },
   ];
 
   const slideshows: SlideshowItem[] = [
     {
       title: "Navigating Aeries",
       description: "Step-by-step guide to using Aeries",
-      embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
+      embedLink: "https://docs.google.com/presentation/d/1MV8311icU4tBoUeZX60Ge12SfGjQszMRyDFOZeEhDGA/embed?start=false&loop=false&delayms=3000",
     },
-    {
-      title: "Understanding Your Grades",
-      description: "How to interpret your grade report",
-      embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
-    },
-    {
-      title: "Tracking Assignments",
-      description: "Managing your assignments in Aeries",
-      embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
-    }
   ];
 
   const faqs: FAQItem[] = [
@@ -94,7 +84,7 @@ export default async function StudentSupport() {
           </Suspense>
 
           <Suspense fallback={<div>Loading support information...</div>}>
-            <SupportSection />
+            <SupportSection/>
           </Suspense>
         </div>
 

@@ -1,8 +1,8 @@
 'use client'
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import YouTube from 'react-youtube'
+import { useMemo } from 'react'
 
 interface VideoItem {
   title: string
@@ -16,29 +16,64 @@ interface SlideshowItem {
   embedLink: string
 }
 
-interface ContentTabsProps {
+interface ContentDisplayProps {
   videos: VideoItem[]
   slideshows: SlideshowItem[]
 }
 
-export function ContentTabs({ videos, slideshows }: ContentTabsProps) {
+type InterleavedItem = 
+  | { type: 'slideshow'; content: SlideshowItem }
+  | { type: 'video'; content: VideoItem }
+
+export function ContentTabs({ videos, slideshows }: ContentDisplayProps) {
+  const interleavedContent = useMemo(() => {
+    const maxLength = Math.max(videos.length, slideshows.length)
+    const interleaved: InterleavedItem[] = []
+
+    for (let i = 0; i < maxLength; i++) {
+      if (i < slideshows.length) {
+        interleaved.push({ type: 'slideshow', content: slideshows[i] })
+      }
+      if (i < videos.length) {
+        interleaved.push({ type: 'video', content: videos[i] })
+      }
+    }
+
+    return interleaved
+  }, [videos, slideshows])
+
   return (
-    <Tabs defaultValue="videos" className="w-full">
-      <TabsList className="grid w-full grid-cols-2 mb-8">
-        <TabsTrigger value="videos" className="text-lg font-semibold py-3">Videos</TabsTrigger>
-        <TabsTrigger value="slideshows" className="text-lg font-semibold py-3">Slideshows</TabsTrigger>
-      </TabsList>
-      <TabsContent value="videos">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
-          {videos.map((video, index) => (
-            <Card key={index} className="transition-all duration-300 ease-in-out hover:scale-105">
+    <div className="space-y-16 mx-auto max-w-4xl">
+      {interleavedContent.map((item, index) => (
+        <Card key={index} className="transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg">
+          {item.type === 'slideshow' && (
+            <>
               <CardHeader>
-                <CardTitle>{video.title}</CardTitle>
+                <CardTitle>{item.content.title}</CardTitle>
+                <CardDescription>{item.content.description}</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="aspect-video">
+                  <iframe
+                    src={item.content.embedLink}
+                    width="100%"
+                    height="100%"
+                    allowFullScreen={true}
+                  ></iframe>
+                </div>
+                <p className="mt-4">Learn how to {item.content.description.toLowerCase()}.</p>
+              </CardContent>
+            </>
+          )}
+          {item.type === 'video' && (
+            <>
+              <CardHeader>
+                <CardTitle>{item.content.title}</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="w-full">
                   <YouTube
-                    videoId={video.videoId}
+                    videoId={item.content.videoId}
                     opts={{
                       width: '100%',
                       height: '100%',
@@ -50,36 +85,12 @@ export function ContentTabs({ videos, slideshows }: ContentTabsProps) {
                     }}
                   />
                 </div>
-                <p className="mt-4">{video.description}</p>
+                <p className="mt-4">{item.content.description}</p>
               </CardContent>
-            </Card>
-          ))}
-        </div>
-      </TabsContent>
-
-      <TabsContent value="slideshows">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
-          {slideshows.map((slideshow, index) => (
-            <Card key={index} className="transition-all duration-300 ease-in-out hover:scale-105">
-              <CardHeader>
-                <CardTitle>{slideshow.title}</CardTitle>
-                <CardDescription>{slideshow.description}</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="aspect-video">
-                  <iframe
-                    src={slideshow.embedLink}
-                    width="100%"
-                    height="100%"
-                    allowFullScreen={true}
-                  ></iframe>
-                </div>
-                <p className="mt-4">Learn how to {slideshow.description.toLowerCase()}.</p>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-      </TabsContent>
-    </Tabs>
+            </>
+          )}
+        </Card>
+      ))}
+    </div>
   )
 }

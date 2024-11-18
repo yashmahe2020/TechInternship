@@ -27,8 +27,6 @@ interface FAQItem {
 async function getData() {
   const videos: VideoItem[] = [
     { title: "Copier Basics for Teachers", description: "Introduction to using the school copier efficiently", videoId: "Xaqq6XtSCHs" },
-    { title: "Advanced Copier Features", description: "Learn how to use advanced copying and scanning features", videoId: "Xaqq6XtSCHs" },
-    { title: "Troubleshooting Common Copier Issues", description: "Guide to resolving frequent copier problems", videoId: "Xaqq6XtSCHs" },
   ];
 
   const slideshows: SlideshowItem[] = [
@@ -37,16 +35,6 @@ async function getData() {
       description: "Step-by-step guide for using the copier control panel",
       embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
     },
-    {
-      title: "Eco-Friendly Copying Practices",
-      description: "How to reduce paper waste and use eco-settings",
-      embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
-    },
-    {
-      title: "Maintaining Copier Quality",
-      description: "Tips for ensuring high-quality copies and scans",
-      embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
-    }
   ];
 
   const faqs: FAQItem[] = [

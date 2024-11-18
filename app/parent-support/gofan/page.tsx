@@ -27,8 +27,6 @@ interface FAQItem {
 async function getData() {
   const videos: VideoItem[] = [
     { title: "GoFan Overview for Parents", description: "Introduction to using GoFan for purchasing tickets to school events", videoId: "Xaqq6XtSCHs" },
-    { title: "Creating Your GoFan Account", description: "Step-by-step guide to setting up your GoFan account", videoId: "Xaqq6XtSCHs" },
-    { title: "Purchasing Tickets on GoFan", description: "Walk-through of the ticket purchasing process", videoId: "Xaqq6XtSCHs" },
   ];
 
   const slideshows: SlideshowItem[] = [
@@ -37,16 +35,6 @@ async function getData() {
       description: "A comprehensive guide for parents using GoFan",
       embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
     },
-    {
-      title: "Understanding GoFan Ticket Types",
-      description: "Overview of different ticket options available on GoFan",
-      embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
-    },
-    {
-      title: "Managing Your GoFan Tickets",
-      description: "Guide to viewing, transferring, and refunding tickets",
-      embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
-    }
   ];
 
   const faqs: FAQItem[] = [

@@ -27,8 +27,6 @@ interface FAQItem {
 async function getData() {
   const videos: VideoItem[] = [
     { title: "Google Classroom Overview for Teachers", description: "Introduction to Google Classroom features for teachers", videoId: "Xaqq6XtSCHs" },
-    { title: "Creating and Managing Assignments", description: "Learn how to create, assign, and grade assignments in Google Classroom", videoId: "Xaqq6XtSCHs" },
-    { title: "Organizing Course Materials", description: "Guide to organizing and sharing course materials effectively", videoId: "Xaqq6XtSCHs" },
   ];
 
   const slideshows: SlideshowItem[] = [
@@ -37,16 +35,6 @@ async function getData() {
       description: "Step-by-step guide for teachers using Google Classroom",
       embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
     },
-    {
-      title: "Integrating Google Apps",
-      description: "How to use Google Docs, Sheets, and Slides within Classroom",
-      embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
-    },
-    {
-      title: "Managing Student Submissions",
-      description: "Efficiently handling and grading student work in Google Classroom",
-      embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
-    }
   ];
 
   const faqs: FAQItem[] = [

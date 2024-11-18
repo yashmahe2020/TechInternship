@@ -27,8 +27,6 @@ interface FAQItem {
 async function getData() {
   const videos: VideoItem[] = [
     { title: "Minga Overview for Teachers", description: "Introduction to Minga features for teachers and faculty", videoId: "Xaqq6XtSCHs" },
-    { title: "Creating Digital Hall Passes", description: "Learn how to create and manage digital hall passes in Minga", videoId: "Xaqq6XtSCHs" },
-    { title: "Managing Student Check-ins", description: "Guide to tracking and managing student check-ins with Minga", videoId: "Xaqq6XtSCHs" },
   ];
 
   const slideshows: SlideshowItem[] = [
@@ -37,16 +35,6 @@ async function getData() {
       description: "Step-by-step guide for teachers using Minga",
       embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
     },
-    {
-      title: "Setting Up School Events",
-      description: "How to create and manage school events in Minga",
-      embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
-    },
-    {
-      title: "Using Minga for Classroom Management",
-      description: "Leveraging Minga features for effective classroom management",
-      embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
-    }
   ];
 
   const faqs: FAQItem[] = [

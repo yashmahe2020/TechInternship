@@ -27,8 +27,6 @@ interface FAQItem {
 async function getData() {
   const videos: VideoItem[] = [
     { title: "MVHS Clubs Overview", description: "Learn about the diverse clubs at Mountain View High School", videoId: "Xaqq6XtSCHs" },
-    { title: "How to Start a Club", description: "Step-by-step guide to creating your own club at MVHS", videoId: "Xaqq6XtSCHs" },
-    { title: "Club Fair Highlights", description: "Explore the exciting clubs showcased at our annual Club Fair", videoId: "Xaqq6XtSCHs" },
   ];
 
   const slideshows: SlideshowItem[] = [
@@ -37,16 +35,6 @@ async function getData() {
       description: "Discover our most active and popular student organizations",
       embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
     },
-    {
-      title: "Club Leadership Roles",
-      description: "Learn about different leadership positions within clubs",
-      embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
-    },
-    {
-      title: "Club Event Planning",
-      description: "Tips for organizing successful club events",
-      embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
-    }
   ];
 
   const faqs: FAQItem[] = [

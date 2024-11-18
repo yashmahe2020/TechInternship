@@ -1,7 +1,7 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 
-export const SupportSection: React.FC = () => {
+const TechRequestForm: React.FC = () => {
   return (
     <div className="w-full max-w-4xl mx-auto my-16 px-4 duration-200 ease-in-out hover:scale-105">
       <div className="bg-gradient-to-br from-yellow-200 to-yellow-500 rounded-3xl shadow-2xl overflow-hidden">
@@ -28,3 +28,5 @@ export const SupportSection: React.FC = () => {
     </div>
   );
 };
+
+export default TechRequestForm;

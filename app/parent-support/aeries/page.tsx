@@ -27,8 +27,6 @@ interface FAQItem {
 async function getData() {
   const videos: VideoItem[] = [
     { title: "Aeries Overview for Parents", description: "Introduction to Aeries features for parents", videoId: "Xaqq6XtSCHs" },
-    { title: "Viewing Grades", description: "Learn how to view and understand your child's grades", videoId: "Xaqq6XtSCHs" },
-    { title: "Checking Attendance", description: "Guide to checking your child's attendance records", videoId: "Xaqq6XtSCHs" },
   ];
 
   const slideshows: SlideshowItem[] = [
@@ -37,16 +35,6 @@ async function getData() {
       description: "Step-by-step guide for parents",
       embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
     },
-    {
-      title: "Monitoring Your Child's Progress",
-      description: "How to keep track of grades and attendance",
-      embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
-    },
-    {
-      title: "Parent-Teacher Communication Tips",
-      description: "Using Aeries to stay connected with teachers",
-      embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
-    }
   ];
 
   const faqs: FAQItem[] = [

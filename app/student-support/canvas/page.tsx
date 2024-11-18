@@ -27,8 +27,6 @@ interface FAQItem {
 async function getData() {
   const videos: VideoItem[] = [
     { title: "Canvas Overview", description: "Introduction to Canvas features", videoId: "Xaqq6XtSCHs" },
-    { title: "Navigating Your Courses", description: "How to find and access your courses in Canvas", videoId: "Xaqq6XtSCHs" },
-    { title: "Submitting Assignments", description: "Step-by-step guide to submitting assignments in Canvas", videoId: "Xaqq6XtSCHs" },
   ];
 
   const slideshows: SlideshowItem[] = [
@@ -37,16 +35,6 @@ async function getData() {
       description: "Explore the main features of your Canvas dashboard",
       embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
     },
-    {
-      title: "Using the Canvas Calendar",
-      description: "How to effectively use the Calendar feature in Canvas",
-      embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
-    },
-    {
-      title: "Participating in Discussions",
-      description: "Guide to engaging in Canvas discussion boards",
-      embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
-    }
   ];
 
   const faqs: FAQItem[] = [

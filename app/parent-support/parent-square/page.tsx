@@ -27,8 +27,6 @@ interface FAQItem {
 async function getData() {
   const videos: VideoItem[] = [
     { title: "ParentSquare Overview", description: "Introduction to ParentSquare features for parents", videoId: "Xaqq6XtSCHs" },
-    { title: "Setting Up Your ParentSquare Account", description: "Step-by-step guide to configuring your ParentSquare preferences", videoId: "Xaqq6XtSCHs" },
-    { title: "Communicating Through ParentSquare", description: "How to effectively use ParentSquare for school communications", videoId: "Xaqq6XtSCHs" },
   ];
 
   const slideshows: SlideshowItem[] = [
@@ -37,16 +35,6 @@ async function getData() {
       description: "A comprehensive guide for parents using ParentSquare",
       embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
     },
-    {
-      title: "Understanding ParentSquare Notifications",
-      description: "Overview of different types of notifications and how to manage them",
-      embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
-    },
-    {
-      title: "Using ParentSquare for Event Sign-Ups",
-      description: "Guide to participating in school events and volunteer opportunities",
-      embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
-    }
   ];
 
   const faqs: FAQItem[] = [

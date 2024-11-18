@@ -27,8 +27,6 @@ interface FAQItem {
 async function getData() {
   const videos: VideoItem[] = [
     { title: "Remind Overview for Teachers", description: "Introduction to Remind features for teachers and faculty", videoId: "Xaqq6XtSCHs" },
-    { title: "Setting Up Classes in Remind", description: "Learn how to create and manage classes in Remind", videoId: "Xaqq6XtSCHs" },
-    { title: "Sending Effective Messages", description: "Guide to crafting and sending impactful messages through Remind", videoId: "Xaqq6XtSCHs" },
   ];
 
   const slideshows: SlideshowItem[] = [
@@ -37,16 +35,6 @@ async function getData() {
       description: "Step-by-step guide for teachers using Remind",
       embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
     },
-    {
-      title: "Managing Student and Parent Contacts",
-      description: "How to organize and manage your contacts in Remind",
-      embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
-    },
-    {
-      title: "Using Remind for Event Planning",
-      description: "Leveraging Remind features for school events and activities",
-      embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
-    }
   ];
 
   const faqs: FAQItem[] = [

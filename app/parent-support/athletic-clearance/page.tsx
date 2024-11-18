@@ -26,27 +26,18 @@ interface FAQItem {
 
 async function getData() {
   const videos: VideoItem[] = [
-    { title: "Athletic Clearance Overview", description: "Introduction to the Athletic Clearance process at Mountain View HS", videoId: "Xaqq6XtSCHs" },
-    { title: "Creating Your Athletic Clearance Account", description: "Step-by-step guide to setting up your account", videoId: "Xaqq6XtSCHs" },
-    { title: "Completing Required Forms", description: "Walk-through of all necessary forms for Athletic Clearance", videoId: "Xaqq6XtSCHs" },
+    // { title: "Athletic Clearance Overview", description: "Introduction to the Athletic Clearance process at Mountain View HS", videoId: "Xaqq6XtSCHs" },
+    // { title: "Creating Your Athletic Clearance Account", description: "Step-by-step guide to setting up your account", videoId: "Xaqq6XtSCHs" },
+    // { title: "Completing Required Forms", description: "Walk-through of all necessary forms for Athletic Clearance", videoId: "Xaqq6XtSCHs" },
   ];
 
   const slideshows: SlideshowItem[] = [
     {
       title: "Navigating the Athletic Clearance Platform",
       description: "A comprehensive guide for parents using the Athletic Clearance system",
-      embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
+      embedLink: "https://docs.google.com/presentation/d/1Iz7mx8NfcMulFuppPT6ZSg3GQXFc_FQvfMqn_cKvC8A/embed?start=false&loop=false&delayms=3000",
     },
-    {
-      title: "Understanding Athletic Participation Requirements",
-      description: "Overview of all requirements for participating in MVHS athletics",
-      embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
-    },
-    {
-      title: "Submitting Medical Information and Forms",
-      description: "Guide to properly submitting all required medical information",
-      embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
-    }
+    
   ];
 
   const faqs: FAQItem[] = [

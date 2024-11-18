@@ -27,8 +27,6 @@ interface FAQItem {
 async function getData() {
   const videos: VideoItem[] = [
     { title: "Canvas Overview for Teachers", description: "Introduction to Canvas features for teachers and faculty", videoId: "Xaqq6XtSCHs" },
-    { title: "Creating and Managing Courses", description: "Learn how to set up and organize your courses in Canvas", videoId: "Xaqq6XtSCHs" },
-    { title: "Grading Assignments in Canvas", description: "Guide to efficiently grading student work in Canvas", videoId: "Xaqq6XtSCHs" },
   ];
 
   const slideshows: SlideshowItem[] = [
@@ -37,16 +35,6 @@ async function getData() {
       description: "Step-by-step guide for teachers using Canvas",
       embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
     },
-    {
-      title: "Creating Engaging Modules",
-      description: "How to design and organize course content in Canvas",
-      embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
-    },
-    {
-      title: "Using Canvas Analytics",
-      description: "Leveraging Canvas data to improve student outcomes",
-      embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
-    }
   ];
 
   const faqs: FAQItem[] = [

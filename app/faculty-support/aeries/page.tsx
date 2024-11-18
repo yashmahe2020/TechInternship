@@ -27,8 +27,6 @@ interface FAQItem {
 async function getData() {
   const videos: VideoItem[] = [
     { title: "Aeries Overview for Teachers", description: "Introduction to Aeries features for teachers and faculty", videoId: "Xaqq6XtSCHs" },
-    { title: "Managing Gradebooks", description: "Learn how to create and manage gradebooks effectively", videoId: "Xaqq6XtSCHs" },
-    { title: "Taking Attendance", description: "Guide to taking and managing student attendance in Aeries", videoId: "Xaqq6XtSCHs" },
   ];
 
   const slideshows: SlideshowItem[] = [
@@ -37,16 +35,6 @@ async function getData() {
       description: "Step-by-step guide for teachers using Aeries",
       embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
     },
-    {
-      title: "Creating and Managing Assignments",
-      description: "How to add, edit, and grade assignments in Aeries",
-      embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
-    },
-    {
-      title: "Generating Student Reports",
-      description: "Using Aeries to create comprehensive student reports",
-      embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
-    }
   ];
 
   const faqs: FAQItem[] = [

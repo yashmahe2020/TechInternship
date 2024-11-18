@@ -27,8 +27,6 @@ interface FAQItem {
 async function getData() {
   const videos: VideoItem[] = [
     { title: "Slack Overview for Educators", description: "Introduction to Slack features for teachers and faculty", videoId: "Xaqq6XtSCHs" },
-    { title: "Setting Up Channels and Direct Messages", description: "Learn how to organize communication in Slack", videoId: "Xaqq6XtSCHs" },
-    { title: "Using Slack for Collaboration", description: "Guide to leveraging Slack for team projects and discussions", videoId: "Xaqq6XtSCHs" },
   ];
 
   const slideshows: SlideshowItem[] = [
@@ -37,16 +35,6 @@ async function getData() {
       description: "Step-by-step guide for teachers using Slack",
       embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
     },
-    {
-      title: "Integrating Educational Apps with Slack",
-      description: "How to enhance Slack with education-focused integrations",
-      embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
-    },
-    {
-      title: "Managing File Sharing in Slack",
-      description: "Efficiently sharing and organizing resources in Slack",
-      embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
-    }
   ];
 
   const faqs: FAQItem[] = [
