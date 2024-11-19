@@ -16,11 +16,8 @@ interface SupportCardProps {
 }
 
 const prItems = [
-  { title: 'Instagram', url: '/public-relations/instagram', description: 'Follow our official Instagram for updates and highlights', icon: Instagram },
-  { title: 'Canvas', url: '/public-relations/canvas', description: 'Access course materials and announcements', icon: Layers },
-  { title: 'ASB Connection', url: '/public-relations/asb', description: 'Stay connected with student government activities', icon: Users },
-  { title: 'Promotional Videos', url: '/public-relations/promotional-videos', description: 'Watch and share our school\'s promotional content', icon: Video },
-  { title: 'Newsletter', url: '/public-relations/newsletter', description: 'Subscribe to our regular newsletter for important updates', icon: Newspaper },
+  { title: 'Social Media', url: '/public-relations/social-media', description: 'Follow our social media accounts for updates and highlights', icon: Instagram },
+  { title: 'Podcast', url: '/public-relations/podcast', description: 'Access course materials and announcements', icon: Layers },
 ];
 
 const PRCard: FC<SupportCardProps> = ({ title, url, description, icon: Icon }) => (

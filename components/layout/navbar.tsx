@@ -28,17 +28,6 @@ const DROPDOWN_ITEMS: DropdownHead[] = [
       { title: 'Clubs', url: '/student-support/clubs'},
     ],
   },
-  // {
-  //   name: 'Public Relations',
-  //   url: '/public-relations',
-  //   items: [
-  //     { title: 'Instagram', url: '/public-relations/instagram'},
-  //     { title: 'Canvas', url: '/public-relations/canvas'},
-  //     { title: 'ASB Connection', url: '/public-relations/asb'},
-  //     { title: 'Promotional Videos', url: '/public-relations/promotional-videos'},
-  //     { title: 'Newsletter', url: '/public-relations/newsletter'},
-  //   ],
-  // },
   {
     name: 'Faculty Support',
     url: '/faculty-support',
@@ -60,6 +49,14 @@ const DROPDOWN_ITEMS: DropdownHead[] = [
       { title: 'Aeries', url: '/parent-support/aeries'},
       { title: 'Parent Square', url: '/parent-support/parent-square'},
       { title: 'GoFan', url: '/parent-support/gofan'},
+    ],
+  },
+  {
+    name: 'Public Relations',
+    url: '/public-relations',
+    items: [
+      { title: 'Social Media', url: '/public-relations/social-media'},
+      { title: 'Podcast', url: '/public-relations/podcast'},
     ],
   },
 ];

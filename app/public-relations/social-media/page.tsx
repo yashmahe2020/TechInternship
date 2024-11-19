@@ -26,40 +26,40 @@ interface FAQItem {
 
 async function getData() {
   const videos: VideoItem[] = [
-    { title: "Aeries Overview for Parents", description: "Introduction to Aeries features for parents", videoId: "Xaqq6XtSCHs" },
+    // { title: "Aeries Overview", description: "Learn the basics of Aeries", videoId: "Xaqq6XtSCHs" },
   ];
 
   const slideshows: SlideshowItem[] = [
-    {
-      title: "Navigating the Parent Portal",
-      description: "Step-by-step guide for parents",
-      embedLink: "https://docs.google.com/presentation/d/1pxB6Y_HAmLdRUtAZAJrv6FFKzV-HCCcsn3Ge_ClFwE0/embed?start=false&loop=false&delayms=3000",
-    },
+    // {
+    //   title: "Social Media",
+    //   description: "Finding social media accounts?",
+    //   embedLink: "https://docs.google.com/presentation/d/1MV8311icU4tBoUeZX60Ge12SfGjQszMRyDFOZeEhDGA/embed?start=false&loop=false&delayms=3000",
+    // },
   ];
 
   const faqs: FAQItem[] = [
     {
-      question: "How do I reset my Aeries parent account password?",
-      answer: "To reset your password, go to the Aeries login page and click 'Forgot Password'. Follow the steps to receive a reset link. If you need further help, please contact your child's school office."
+      question: "Where can I follow the Tech Internship Program on social media?",
+      answer: "You can follow the Tech Internship Program on Instagram, Twitter, and TikTok at @MVHSTechInterns for updates, tips, and highlights!"
     },
     {
-      question: "Can I see my child's assignments and grades on Aeries?",
-      answer: "Yes, you can view your child's grades, assignments, and more. Log in to your parent account, and look under the 'Grades' or 'Assignments' sections for detailed information."
+      question: "What type of content is shared on the program's social media?",
+      answer: "We share updates about upcoming events, success stories from students, and tech tips."
     },
     {
-      question: "How do I track my child's attendance?",
-      answer: "In your parent portal, click on the 'Attendance' section to view your child's attendance history, including any absences or tardies."
+      question: "Can I tag the program in my posts or share my experiences?",
+      answer: "Yes, we encourage students to share their experiences and tag us using @MVHSTechInterns or #MVHSTechInterns."
     },
     {
-      question: "Can I communicate with teachers through Aeries?",
-      answer: "Yes, Aeries offers a messaging feature to help parents communicate with teachers. Look for the 'Messages' or 'Communication' tab in the portal."
+      question: "Can I get my content featured on the program's social media?",
+      answer: "Yes, we intend to feature student's perspective. Just make sure it's tech-related and aligns with our program's mission!"
     },
   ];
 
   return { videos, slideshows, faqs };
 }
 
-export default async function ParentSupport() {
+export default async function StudentSupport() {
   const { videos, slideshows, faqs } = await getData();
 
   return (
@@ -69,8 +69,8 @@ export default async function ParentSupport() {
 
         <div className="z-10 w-full max-w-7xl px-5 xl:px-0 mt-16 my-8">
           <Hero 
-            title="Aeries Support" 
-            description="Resources and support for parents using the Aeries Parent Portal."
+            title="Social Media" 
+            description="Tech support and resources for students, parents, and administration."
           />
 
           <Suspense fallback={<div>Loading content...</div>}>
@@ -82,7 +82,7 @@ export default async function ParentSupport() {
           </Suspense>
 
           <Suspense fallback={<div>Loading support information...</div>}>
-            <SupportSection />
+            <SupportSection/>
           </Suspense>
         </div>
 
