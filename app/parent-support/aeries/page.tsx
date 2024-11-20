@@ -26,7 +26,7 @@ interface FAQItem {
 
 async function getData() {
   const videos: VideoItem[] = [
-    { title: "Aeries Overview for Parents", description: "Introduction to Aeries features for parents", videoId: "Xaqq6XtSCHs" },
+    // { title: "Aeries Overview for Parents", description: "Introduction to Aeries features for parents", videoId: "Xaqq6XtSCHs" },
   ];
 
   const slideshows: SlideshowItem[] = [

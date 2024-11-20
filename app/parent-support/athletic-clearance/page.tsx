@@ -35,7 +35,7 @@ async function getData() {
     {
       title: "Navigating the Athletic Clearance Platform",
       description: "A comprehensive guide for parents using the Athletic Clearance system",
-      embedLink: "https://docs.google.com/presentation/d/1Iz7mx8NfcMulFuppPT6ZSg3GQXFc_FQvfMqn_cKvC8A/embed?start=false&loop=false&delayms=3000",
+      embedLink: "https://docs.google.com/presentation/d/1dplhkPjCSojQ98UFBFKPUdXs9N8Iw9gFhMMMWW5USrU/embed?start=false&loop=false&delayms=3000",
     },
     
   ];

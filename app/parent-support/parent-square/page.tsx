@@ -26,14 +26,14 @@ interface FAQItem {
 
 async function getData() {
   const videos: VideoItem[] = [
-    { title: "ParentSquare Overview", description: "Introduction to ParentSquare features for parents", videoId: "Xaqq6XtSCHs" },
+    // { title: "ParentSquare Overview", description: "Introduction to ParentSquare features for parents", videoId: "Xaqq6XtSCHs" },
   ];
 
   const slideshows: SlideshowItem[] = [
     {
       title: "Navigating the ParentSquare Platform",
       description: "A comprehensive guide for parents using ParentSquare",
-      embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
+      embedLink: "https://docs.google.com/presentation/d/1iuUfBSMIPrkTgU0VreBGODd1RnFtR3oI5cEOl6fLv9Q/embed?start=false&loop=false&delayms=3000",
     },
   ];
 
