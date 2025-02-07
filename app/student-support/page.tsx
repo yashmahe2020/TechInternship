@@ -20,6 +20,7 @@ const supportItems = [
   { title: 'Canvas', url: '/student-support/canvas', description: 'Manage your courses and assignments', icon: Layers },
   { title: 'Minga', url: '/student-support/minga', description: 'Stay connected with school events and activities', icon: Users },
   { title: 'Clubs', url: '/student-support/clubs', description: 'Explore and join student clubs', icon: GraduationCap },
+  { title: 'Research', url: '/student-support/research', description: 'Discover how to conduct and publish research', icon: GraduationCap },
 ];
 
 const SupportCard: FC<SupportCardProps> = ({ title, url, description, icon: Icon }) => (

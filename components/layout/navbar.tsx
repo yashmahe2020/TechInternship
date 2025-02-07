@@ -26,6 +26,7 @@ const DROPDOWN_ITEMS: DropdownHead[] = [
       { title: 'Canvas', url: '/student-support/canvas'},
       { title: 'Minga', url: '/student-support/minga'},
       { title: 'Clubs', url: '/student-support/clubs'},
+      { title: 'Research', url: '/student-support/research'},
     ],
   },
   {

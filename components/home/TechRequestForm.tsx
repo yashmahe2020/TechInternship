@@ -6,7 +6,7 @@ const TechRequestForm: React.FC = () => {
     <div className="w-full max-w-4xl mx-auto my-16 px-4 duration-200 ease-in-out hover:scale-105">
       <div className="bg-[#FFC600] rounded-3xl shadow-2xl overflow-hidden">
         <div className="bg-[#F5E1A4] m-1 rounded-3xl p-8">
-          <h2 className="mb-8 bg-gradient-to-b from-[#212721] to-[#63666A] bg-clip-text text-transparent font-display text-4xl font-bold tracking-[-0.02em] drop-shadow-sm [text-wrap:balance] md:text-6xl md:leading-[5rem]">
+          <h2 className="mb-8 bg-gradient-to-b from-[#212721] to-[#63666A] bg-clip-text text-transparent font-display text-4xl font-bold tracking-[-0.02em] drop-shadow-sm [text-wrap:balance] md:text-6xl md:leading-[5rem] text-center">
             Tech Request Form
           </h2>
           <p className="text-lg text-center text-[#212721] mb-8">
