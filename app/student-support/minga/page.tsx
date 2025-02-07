@@ -26,14 +26,14 @@ interface FAQItem {
 
 async function getData() {
   const videos: VideoItem[] = [
-    { title: "Minga Overview", description: "Learn the basics of Minga", videoId: "Xaqq6XtSCHs" },
+    // { title: "Minga Overview", description: "Learn the basics of Minga", videoId: "Xaqq6XtSCHs" },
   ];
 
   const slideshows: SlideshowItem[] = [
     {
       title: "Setting Up Minga",
       description: "Step-by-step guide for initial setup",
-      embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
+      embedLink: "https://docs.google.com/presentation/d/18PmXIDyDnmH0lBIA6CXj9F8_dcuP9xmaTqqs-Zn5SdA/embed?start=false&loop=false&delayms=3000",
     },
   ];
 

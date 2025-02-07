@@ -26,14 +26,14 @@ interface FAQItem {
 
 async function getData() {
   const videos: VideoItem[] = [
-    { title: "Canvas Overview", description: "Introduction to Canvas features", videoId: "Xaqq6XtSCHs" },
+    // { title: "Canvas Overview", description: "Introduction to Canvas features", videoId: "Xaqq6XtSCHs" },
   ];
 
   const slideshows: SlideshowItem[] = [
     {
       title: "Canvas Dashboard Tour",
       description: "Explore the main features of your Canvas dashboard",
-      embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
+      embedLink: "https://docs.google.com/presentation/d/1AmWofy3LS7BDwhlqDXOA03QuDl8QsJj1sjxbx0Y_6M4/embed?start=false&loop=false&delayms=3000",
     },
   ];
 

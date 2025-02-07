@@ -26,14 +26,14 @@ interface FAQItem {
 
 async function getData() {
   const videos: VideoItem[] = [
-    { title: "MVHS Clubs Overview", description: "Learn about the diverse clubs at Mountain View High School", videoId: "Xaqq6XtSCHs" },
+    // { title: "MVHS Clubs Overview", description: "Learn about the diverse clubs at Mountain View High School", videoId: "Xaqq6XtSCHs" },
   ];
 
   const slideshows: SlideshowItem[] = [
     {
-      title: "Popular MVHS Clubs",
-      description: "Discover our most active and popular student organizations",
-      embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
+      title: "MVHS Clubs Tutorial",
+      description: "Discover and create active student clubs on any interest",
+      embedLink: "https://docs.google.com/presentation/d/1jzSi04E2W1jn4dc6aFOCtieasJyvgTlLohZJkjKhi9I/embed?start=false&loop=false&delayms=3000",
     },
   ];
 
