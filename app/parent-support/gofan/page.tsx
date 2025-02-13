@@ -26,14 +26,14 @@ interface FAQItem {
 
 async function getData() {
   const videos: VideoItem[] = [
-    { title: "GoFan Overview for Parents", description: "Introduction to using GoFan for purchasing tickets to school events", videoId: "Xaqq6XtSCHs" },
+    // { title: "GoFan Overview for Parents", description: "Introduction to using GoFan for purchasing tickets to school events", videoId: "Xaqq6XtSCHs" },
   ];
 
   const slideshows: SlideshowItem[] = [
     {
       title: "Navigating the GoFan Platform",
-      description: "A comprehensive guide for parents using GoFan",
-      embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
+      description: "A comprehensive guide to using GoFan",
+      embedLink: "https://docs.google.com/presentation/d/1fI6NMpbzWrTsCFZASALE33O8HMOZY-ycrqCifzDx7NQ/embed?start=false&loop=false&delayms=3000",
     },
   ];
 
