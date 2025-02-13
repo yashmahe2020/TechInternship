@@ -6,7 +6,7 @@ import Nav from '@/components/layout/nav';
 import Footer from '@/components/layout/footer';
 import { FC } from "react";
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { ArrowRight, BookOpen, Users, Search, Layers, GraduationCap } from 'lucide-react';
+import { ArrowRight, BookOpen, Users, Layers, GraduationCap, FileSearch, Library, Grid } from 'lucide-react';
 
 interface SupportCardProps {
   title: string;
@@ -20,7 +20,9 @@ const supportItems = [
   { title: 'Canvas', url: '/student-support/canvas', description: 'Manage your courses and assignments', icon: Layers },
   { title: 'Minga', url: '/student-support/minga', description: 'Stay connected with school events and activities', icon: Users },
   { title: 'Clubs', url: '/student-support/clubs', description: 'Explore and join student clubs', icon: GraduationCap },
-  { title: 'Research', url: '/student-support/research', description: 'Discover how to conduct and publish research', icon: GraduationCap },
+  { title: 'Research', url: '/student-support/research', description: 'Discover how to conduct and publish research', icon: FileSearch },
+  { title: 'College Board', url: '/student-support/college-board', description: 'Learn how to utilize CollegeBoard tools', icon: Library },
+  { title: 'ClassLink', url: '/student-support/classlink', description: 'Easily navigate to all your school apps in one place', icon: Grid },
 ];
 
 const SupportCard: FC<SupportCardProps> = ({ title, url, description, icon: Icon }) => (

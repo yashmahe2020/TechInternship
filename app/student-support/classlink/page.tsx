@@ -29,35 +29,35 @@ async function getData() {
 
   const slideshows: SlideshowItem[] = [
     {
-      title: "Student Research Resources",
-      description: "Discover how and where to conduct and publish research",
-      embedLink: "https://docs.google.com/presentation/d/1Xc3ppd6YjoNYJQxggnhyzMxz2hzlCcJn5kBsGgsufEc/embed?start=false&loop=false&delayms=3000",
+      title: "Navigating ClassLink",
+      description: "Learn how to use ClassLink to access your educational apps and resources",
+      embedLink: "https://docs.google.com/presentation/d/1SmVdlIWliFJHVy4FaK9gv7FqhtFM89ZWO4fRMOhCVQY/embed?start=false&loop=false&delayms=3000",
     },
   ];
 
   const faqs: FAQItem[] = [
     {
-      question: "How can I start my own research project?",
-      answer: "To start a research project, first identify a topic of interest, then find a mentor or advisor who can guide you. Next, conduct a literature review to understand existing work and develop a research question. Finally, create a research plan and seek approval if necessary."
+      question: "What is ClassLink, and how does it help students?",
+      answer: "ClassLink is a single sign-on platform that allows students to access all their educational tools, applications, and resources in one place with a single login. It simplifies access to digital learning materials."
     },
     {
-      question: "Where can I publish my research as a high school student?",
-      answer: "There are several journals and conferences that accept high school research, such as the Journal of Emerging Investigators, the High School Research Journal, and the Regeneron Science Talent Search. Your school may also have opportunities to present your findings."
+      question: "How do I log into ClassLink?",
+      answer: "You can log into ClassLink by visiting your school's ClassLink portal and signing in with your school-provided credentials. Some schools also support login through Google or Microsoft accounts."
     },
     {
-      question: "What resources are available for student research at MVHS?",
-      answer: "MVHS offers access to research databases, faculty mentorship, and science fairs. You can also join research-oriented clubs like the STEM Research Club."
+      question: "What apps can I access through ClassLink?",
+      answer: "ClassLink provides access to a variety of educational apps, including Canvas, Aeries, Google Drive, and College Board resources. The apps available may vary depending on your school's setup."
     },
     {
-      question: "How do I find a research mentor?",
-      answer: "You can reach out to teachers, university professors, or professionals in your field of interest. Many universities have outreach programs for high school students, and some online platforms connect students with mentors in various disciplines."
+      question: "Can I use ClassLink on my mobile device?",
+      answer: "Yes, ClassLink has a mobile app available for iOS and Android, allowing you to access your school resources from anywhere."
     }
   ];
 
   return { videos, slideshows, faqs };
 }
 
-export default async function MVHSClubs() {
+export default async function ClassLinkResources() {
   const { videos, slideshows, faqs } = await getData();
 
   return (
@@ -67,8 +67,8 @@ export default async function MVHSClubs() {
 
         <div className="z-10 w-full max-w-7xl px-5 xl:px-0 mt-16 my-8">
           <Hero 
-            title="Research Resources" 
-            description="Learn how and where to conduct and publish research."
+            title="ClassLink Resources" 
+            description="Learn how to navigate ClassLink for seamless access to your educational apps and tools."
           />
 
           <Suspense fallback={<div>Loading content...</div>}>
