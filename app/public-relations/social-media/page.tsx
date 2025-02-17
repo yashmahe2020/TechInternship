@@ -40,7 +40,7 @@ async function getData() {
   const faqs: FAQItem[] = [
     {
       question: "Where can I follow the Tech Internship Program on social media?",
-      answer: "You can follow the Tech Internship Program on Instagram, Twitter, and TikTok at @MVHSTechInterns for updates, tips, and highlights!"
+      answer: "You can follow the Tech Internship Program on Linkedin and Instagram at mvhs-principal-s-tech-internship and @mvhs.tech, respectively, for updates, tips, and highlights!"
     },
     {
       question: "What type of content is shared on the program's social media?",
@@ -48,7 +48,7 @@ async function getData() {
     },
     {
       question: "Can I tag the program in my posts or share my experiences?",
-      answer: "Yes, we encourage students to share their experiences and tag us using @MVHSTechInterns or #MVHSTechInterns."
+      answer: "Yes, we encourage students to share their experiences and tag us using @mvhs.tech."
     },
     {
       question: "Can I get my content featured on the program's social media?",

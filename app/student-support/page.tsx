@@ -49,8 +49,8 @@ export default function StudentSupport() {
         <div className="z-10 w-full max-w-5xl px-5 xl:px-0 mt-16 my-8 flex flex-col md:flex-row items-center justify-between">
           <div className="mr-10 md:w-1/2 mt-10 md:mt-0 flex justify-center md:justify-end">
             <img
-              src="/spartan.png"
-              alt="MVHS Spartan Logo"
+              src="/tech-internship.png"
+              alt="Tech Internship Logo"
               className="w-full max-w-[400px] h-auto max-h-[400px] rounded-lg"
             />
           </div>

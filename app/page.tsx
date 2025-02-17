@@ -21,7 +21,7 @@ export default function Home() {
           </div>
           <div className="md:w-1/2 mt-10 md:mt-0 flex justify-center md:justify-end">
             <img
-              src="/spartan.png"
+              src="/tech-internship.png"
               alt="Tech Internship"
               className="w-full max-w-[450px] h-auto max-h-[450px] rounded-lg"
             />

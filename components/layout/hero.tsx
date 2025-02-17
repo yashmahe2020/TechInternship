@@ -18,7 +18,7 @@ export function Hero({ title, description }: HeroProps) {
       </div>
       <div className="md:w-1/2 flex justify-center md:justify-end">
         <Image
-          src="/spartan.png"
+          src="/tech-internship.png"
           alt="MVHS Spartan Logo"
           width={400}
           height={400}
