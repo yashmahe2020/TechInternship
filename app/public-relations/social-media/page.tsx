@@ -79,7 +79,7 @@ export default async function StudentSupport() {
           </Suspense>
 
           <Suspense fallback={<div>Loading Social Media...</div>}>
-            <SocialMedia faqs={faqs} />
+            <SocialMedia/>
           </Suspense>
 
           <Suspense fallback={<div>Loading FAQs...</div>}>
