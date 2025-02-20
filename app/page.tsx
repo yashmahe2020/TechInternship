@@ -2,7 +2,6 @@ import React from 'react';
 import Nav from '@/components/layout/nav';
 import Footer from '@/components/layout/footer';
 import Mission from '@/components/home/mission';
-import { ArrowRight } from 'lucide-react'
 import TechRequestForm from '@/components/home/TechRequestForm';
 
 export default function Home() {

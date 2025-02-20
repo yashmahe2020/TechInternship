@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { Facebook, Twitter, Instagram, Mail } from 'lucide-react';
+import { Linkedin, Facebook, Twitter, Instagram, Mail } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -39,16 +39,26 @@ export default function Footer() {
           <div className="flex flex-col items-center md:items-end">
             <h3 className="text-lg font-semibold mb-4 text-gray-800">Connect With Us</h3>
             <div className="flex space-x-4 mb-4">
-              <a href="#" className="footer-social-link" aria-label="Facebook">
-                <Facebook size={20} />
+              <a
+                href="https://www.linkedin.com/company/mvhs-principal-s-tech-internship/?viewAsMember=true"
+                className="footer-social-link"
+                aria-label="LinkedIn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Linkedin size={20} />
               </a>
-              <a href="#" className="footer-social-link" aria-label="Twitter">
-                <Twitter size={20} />
-              </a>
-              <a href="#" className="footer-social-link" aria-label="Instagram">
+              <a
+                href="https://www.instagram.com/mvhs.tech/"
+                className="footer-social-link"
+                aria-label="Instagram"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Instagram size={20} />
               </a>
             </div>
+
             <div className="flex flex-col items-end space-y-2">
               <a href="mailto:100028415@mvla.net" className="footer-contact-link">
                 <Mail size={16} className="inline mr-2" />

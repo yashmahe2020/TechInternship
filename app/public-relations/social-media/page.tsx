@@ -6,6 +6,7 @@ import { ContentTabs } from '@/components/layout/tabs';
 import { FAQSection } from '@/components/layout/faq';
 import { SupportSection } from '@/components/layout/support';
 import { Hero } from '@/components/layout/hero';
+import { SocialMedia } from '@/components/layout/social-media';
 
 interface VideoItem {
   title: string;
@@ -75,6 +76,10 @@ export default async function StudentSupport() {
 
           <Suspense fallback={<div>Loading content...</div>}>
             <ContentTabs videos={videos} slideshows={slideshows} />
+          </Suspense>
+
+          <Suspense fallback={<div>Loading Social Media...</div>}>
+            <SocialMedia faqs={faqs} />
           </Suspense>
 
           <Suspense fallback={<div>Loading FAQs...</div>}>
