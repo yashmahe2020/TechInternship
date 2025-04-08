@@ -191,7 +191,12 @@ export default function NavBar() {
                 />
               </div>
             ))}
-            
+            <Link
+              href="/journey"
+              className="flex items-center justify-center text-sm leading-[110%] px-4 py-2 rounded-md hover:bg-[#F5F5F5] dark:hover:bg-neutral-800 hover:text-black text-muted dark:text-muted-dark ml-auto"
+            >
+              Journey
+            </Link>
           </nav>
         </div>
       </div>

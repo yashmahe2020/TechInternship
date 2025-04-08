@@ -26,14 +26,14 @@ interface FAQItem {
 
 async function getData() {
   const videos: VideoItem[] = [
-    { title: "Aeries Overview for Teachers", description: "Introduction to Aeries features for teachers and faculty", videoId: "Xaqq6XtSCHs" },
+    // { title: "Aeries Overview for Teachers", description: "Introduction to Aeries features for teachers and faculty", videoId: "Xaqq6XtSCHs" },
   ];
 
   const slideshows: SlideshowItem[] = [
     {
       title: "Navigating the Teacher Portal",
       description: "Step-by-step guide for teachers using Aeries",
-      embedLink: "https://docs.google.com/presentation/d/1QzZibyyGJ0YRejfh0TM9H1J-KeWTb6j873Z4U-t1wng/embed?start=false&loop=false&delayms=3000",
+      embedLink: "https://docs.google.com/presentation/d/1QKPfM5XOsHJJZB6TrC8ABisXXjHqxwmOjgtfVNQvEaM/embed?start=false&loop=false&delayms=3000",
     },
   ];
 

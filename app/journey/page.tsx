@@ -1,6 +1,7 @@
 import { Hero } from "@/components/layout/hero";
 import Timeline from "@/components/Timeline";
 import Nav from "@/components/layout/nav";
+import AutoScroll from "@/components/AutoScroll";
 
 export default function TimelinePage() {
   return (
@@ -11,7 +12,9 @@ export default function TimelinePage() {
           title="Our Journey"
           description="A timeline of our key dates and projects"
         />
-        <Timeline />
+        <AutoScroll speed={0.5}>
+          <Timeline />
+        </AutoScroll>
       </div>
     </main>
   );
