@@ -51,6 +51,15 @@ const timelineData: TimelineEvent[] = [
   },
   {
     date: "Spring 2025",
+    title: "Presentation at Berkeley 21 CSLA Conference",
+    description:
+      "Tech Internship students presented their perspectives on educational technology and student-driven innovation at the Berkeley-hosted 21 CSLA Conference. The presentation highlighted the importance of student voice in educational technology decisions and showcased our successful implementation of student-led tech initiatives. Our team received recognition for innovative approaches to integrating technology in education. The conference provided valuable networking opportunities with education leaders across California.",
+    tags: ["Conference", "Berkeley", "Student Voice"],
+    image: "/images/timeline/berkeley-speaking.jpeg",
+    image2: "/images/timeline/berkeley-conference-group.jpeg",
+  },
+  {
+    date: "Spring 2025",
     title: "Google Innovator Project",
     description:
       "Began development of a customizable AI Bill of Rights program for schools, incorporating legal policy, ethical standards, and AI-driven analysis tools. The project aims to establish guidelines for responsible AI use in educational settings while protecting student privacy and promoting ethical technology practices. Our team collaborated with legal experts and educators to ensure the program's comprehensiveness and practicality. The initiative has garnered interest from educational institutions nationwide.",
@@ -69,15 +78,6 @@ const timelineData: TimelineEvent[] = [
   },
   {
     date: "Spring 2025",
-    title: "Presentation at Berkeley 21 CSLA Conference",
-    description:
-      "Tech Internship students presented their perspectives on educational technology and student-driven innovation at the Berkeley-hosted 21 CSLA Conference. The presentation highlighted the importance of student voice in educational technology decisions and showcased our successful implementation of student-led tech initiatives. Our team received recognition for innovative approaches to integrating technology in education. The conference provided valuable networking opportunities with education leaders across California.",
-    tags: ["Conference", "Berkeley", "Student Voice"],
-    image: "/images/timeline/berkeley-speaking.jpeg",
-    image2: "/images/timeline/berkeley-conference-group.jpeg",
-  },
-  {
-    date: "Spring 2025",
     title: "Presentation at Common Sense Media Summit",
     description:
       "Contributed to the Common Sense Media Summit, where students shared insights on tech use, digital wellness, and ethical AI. Our presentation highlighted the importance of student perspectives in developing responsible technology policies. The summit provided a platform to showcase our school's innovative approach to digital citizenship education. Our contributions were featured in the summit's final report, gaining recognition for our program.",
@@ -93,6 +93,24 @@ const timelineData: TimelineEvent[] = [
     tags: ["AI", "Wellbeing", "Community Engagement"],
     image: "/images/timeline/ai-expert-panel.jpeg",
     image2: "/images/timeline/ai-playlab.jpeg",
+  },
+  {
+    date: "Spring 2025",
+    title: "Bill of Rights Video Game",
+    description:
+      "Developed an interactive video game based on the SAFE-AI Bill of Rights for Educators. The game teaches players about the six key rights: Support, Agency, Fairness, Equitable access, Advocacy, and Information. Players navigate educational scenarios where they must apply these rights to make ethical decisions about AI implementation in classrooms. The game has been used in teacher professional development workshops across the district.",
+    tags: ["AI", "Education", "Game Development"],
+    image: "/images/timeline/ai-playlab-3.jpeg",
+    image2: "/images/timeline/ai-playlab-4.jpeg",
+  },
+  {
+    date: "Spring 2025",
+    title: "Bill of Rights Card Game",
+    description:
+      "Created a card game to help educators understand and apply the SAFE-AI Bill of Rights principles. The game features scenario cards that present common AI implementation challenges in education, along with solution cards based on the six rights. Players collaborate to match scenarios with appropriate rights-based solutions, fostering discussion about ethical AI use in education. The card game has been distributed to schools throughout the region.",
+    tags: ["AI", "Education", "Game Design"],
+    image: "/images/timeline/ai-playlab-5.jpeg",
+    image2: "/images/timeline/group-photo-2.jpeg",
   },
   {
     date: "Spring 2025",
