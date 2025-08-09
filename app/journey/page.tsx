@@ -12,13 +12,13 @@ export default function TimelinePage() {
           title="Our Journey"
           description="A timeline of our key dates and projects"
         />
-        <div className="min-h-[300vh]">
+        <div className="min-h-150%">
           <AutoScroll speed={0.5}>
             <Timeline />
           </AutoScroll>
         </div>
       </div>
-      <div className="h-96 w-full"></div>
+      <div className="h-32 w-full"></div>
     </main>
   );
 } 
